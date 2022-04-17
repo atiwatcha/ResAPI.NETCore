@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersApi.DataAccess", "User
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersApi.Business", "UsersApi.Business\UsersApi.Business.csproj", "{DB67624A-6A14-4FB6-9C79-339D4F686129}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3B6F7956-0845-426C-8EFF-2A892E15B16A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApiTestEntToEnd", "UserApiTestEntToEnd\UserApiTestEntToEnd.csproj", "{D420E22B-B890-4C24-A03A-3446C1674F23}"
+	ProjectSection(ProjectDependencies) = postProject
+		{29AD56CB-E2BD-4D70-B578-3CD607D7A001} = {29AD56CB-E2BD-4D70-B578-3CD607D7A001}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +40,16 @@ Global
 		{DB67624A-6A14-4FB6-9C79-339D4F686129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB67624A-6A14-4FB6-9C79-339D4F686129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB67624A-6A14-4FB6-9C79-339D4F686129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D420E22B-B890-4C24-A03A-3446C1674F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D420E22B-B890-4C24-A03A-3446C1674F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D420E22B-B890-4C24-A03A-3446C1674F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D420E22B-B890-4C24-A03A-3446C1674F23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D420E22B-B890-4C24-A03A-3446C1674F23} = {3B6F7956-0845-426C-8EFF-2A892E15B16A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4976731B-279A-4C79-9472-3B6345BFC780}
